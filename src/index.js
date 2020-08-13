@@ -8,11 +8,17 @@ import ReactDOM from "react-dom";
 import App from "./App"
 import Dashboard from "./Dashboard"
 import {BrowserRouter, Switch, Route} from "react-router-dom";
-
+import 'date-fns';
+import DateFnsUtils from '@date-io/date-fns';
+import {
+    MuiPickersUtilsProvider,
+} from '@material-ui/pickers';
 
 const Index = () => {
   return (
     <div>
+      <MuiPickersUtilsProvider utils={DateFnsUtils}>
+
       <BrowserRouter>
         <Switch>
           <Route component={Dashboard} path="/dashboard" exact />
@@ -22,10 +28,10 @@ const Index = () => {
           <Route component={PropertyRequestForm} path="/propertyrequestform" exact />
           <Route component={Inventory} path="/inventory" exact />
           <Route component={App} path="/" exact  />
-          
+
         </Switch>
       </BrowserRouter>
-      
+      </MuiPickersUtilsProvider>
     </div>
   );
 };
