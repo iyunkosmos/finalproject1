@@ -9,23 +9,24 @@ import Typography from '@material-ui/core/Typography';
 
 const OpenTickets = props =>  {
   const { title} = props;
- 
+
 
   return (
     <div>
     <Card  variant="outlined">
       <CardContent>
-        <Typography variant="h5" component="h2" title ={title} />        
+        <Typography variant="h5" component="h2" title ={title} >
+          {title}
+        </Typography>
         <Typography variant="body2" component="p">
-        {title}
         </Typography>
       </CardContent>
       <CardActions>
         <Button size="small">View</Button>
       </CardActions>
-    </Card>      
+    </Card>
   </div>
   );
 }
 
-export default OpenTickets; 
+export default OpenTickets;
