@@ -7,6 +7,10 @@ import Inventory from "./Inventory"
 import ReactDOM from "react-dom";
 import App from "./App"
 import Dashboard from "./Dashboard"
+import Closed from "./Closed"
+import OpenRequest from "./OpenRequest"
+import OpenReplace from "./OpenReplace"
+import OpenPropertyRequest from "./OpenPropertyRequest"
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import 'date-fns';
 import DateFnsUtils from '@date-io/date-fns';
@@ -27,6 +31,10 @@ const Index = () => {
           <Route component={ReplaceForm} path="/replaceform" exact />
           <Route component={PropertyRequestForm} path="/propertyrequestform" exact />
           <Route component={Inventory} path="/inventory" exact />
+          <Route component={Closed} path="/closed" exact />
+          <Route component={OpenRequest} path="/openrequest" exact />
+          <Route component={OpenReplace} path="/openreplace" exact />
+          <Route component={OpenPropertyRequest} path="/openpropertyrequest" exact />
           <Route component={App} path="/" exact  />
 
         </Switch>

@@ -22,7 +22,7 @@ const Forms = props => {
         <Typography color="textSecondary" gutterBottom />
       </CardContent>
       <CardActions>
-        <Button size="small">
+        <Button size="large">
           <AddIcon />
         </Button>
       </CardActions>

@@ -30,10 +30,7 @@ function Back () {
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <ArrowBackIcon />
           </IconButton>
-          <Button />
-          <Typography variant="h6" className={classes.title}>
-            Back
-          </Typography>
+          <Button />          
         </Toolbar>
       </AppBar>
     </div>

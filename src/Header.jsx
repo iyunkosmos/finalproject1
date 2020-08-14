@@ -59,7 +59,6 @@ const Header = () => {
             open={open}
             onClose={handleClose}
           >
-            <MenuItem onClick={handleClose}>Profile</MenuItem>
             <MenuItem onClick={handleClose}>Pending Requests</MenuItem>
             <MenuItem onClick={handleClose}>Log Out</MenuItem>
           </Menu>
